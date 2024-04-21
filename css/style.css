@@ -10,6 +10,19 @@ h3 {
     font-style: normal;
 }
 */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #000;
+    z-index: 1000;
+  }
+  
+  .skip-link:focus {
+    top: 0;
+  }
 
 * {
     margin: 0;
@@ -26,7 +39,7 @@ h3 {
     --bg-color: #F0FFFF;
     --snd-bg-color: #ADD8E6;
     --text-color: #000; 
-    --main-color: #59b2f4;
+    --main-color: #1434A4;
 }
 
 html {
@@ -50,7 +63,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 1rem 9%;
     background-color: #89CFF0;
     display: flex;
     justify-content: space-between;
@@ -74,26 +87,26 @@ header {
     color: #fff;
     background-color: #191970;
 }
-
+@media only screen and (min-width: 768px) {
 .home {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("backgroundimg.jpeg");
 
 }
 
-.home-content h3 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    color: #0096FF;
-}
 
 .home-content h3:nth-of-type(2) {
     margin-bottom: 2rem;
 }
 
 span{
+    color: var(--main-color);
+}
+
+.home-content h2 {
+    font-size: 30px;
+    margin-top: 20px;
     color: var(--main-color);
 }
 
@@ -106,7 +119,7 @@ span{
 .home-img img {
     width: 25vw;
     border: 5px solid #ADD8E6;
-    border-radius: 50%;
+    border-radius: 75px;
 }
 
 .home-content p {
@@ -114,6 +127,62 @@ span{
     font-family: "Raleway", sans-serif;
     margin-right: 10px;
 }
+}
+.home {
+        flex-direction: row; /* Stack children vertically */
+    }
+    
+    .home-img img {
+        width: 25vw;
+        border: 5px solid #ADD8E6;
+        border-radius: 75px;
+        margin-top: 20px;
+    }
+    
+    .home-content h1 {
+        font-size: 4.0rem; /* Smaller font size for the h1 on mobile */
+    }
+
+    .home-content h2 {
+        font-size: 30px; /* Smaller font size for the h3 on mobile */
+        font-weight: 700;
+        color: #0096FF;
+    }
+
+    .home-content h3 {
+        font-size: 30px; /* Smaller font size for the h3 on mobile */
+        font-weight: 700;
+        color: #0096FF;
+    }
+
+    .home-content p {
+        font-size: 1.8rem;
+    }
+    .home-content h1 {
+        font-size: 5.6rem;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+    
+    .home-img img {
+        width: 25vw;
+        border: 5px solid #ADD8E6;
+        border-radius: 90px;
+        justify-content: center;
+    }
+    
+    .home-content p {
+        font-size: 2.1rem;
+        font-family: "Raleway", sans-serif;
+        margin-right: 10px;
+    }
+
+    span{
+        color: var(--main-color);
+    }
+
+
+
 
 .about {
     display: flex;
@@ -132,10 +201,9 @@ span{
     font-size: 4.5rem;
 }
 
-.about-content h2 {
-    text-align: left;
-    line-height: 1.2;
-    font-style: italic;
+.about-content-overlay p {
+    font-size: 18px;
+
 }
 
 /* .about-content h3 {
@@ -218,7 +286,7 @@ span{
 }
 
   .learn-more-btn {
-    background-color: #0096FF;	
+    background-color: #0F52BA;	
     border: none;
     color: white;
     padding: 15px 15px;
@@ -232,6 +300,13 @@ span{
 
 @media only screen and (min-width: 768px) {
 } /* tablet*/
+.header {
+    position: static;
+}
+#container h1{
+    padding: 20px;
+    margin-top: 10px;
+}
 
 
 @media only screen and (min-width: 600px) {
@@ -258,7 +333,7 @@ span{
   
   .about-content-overlay {
     position: absolute;
-    top: 165%;
+    top: 180%;
     left: 70%; /* aligned to the left edge */
     right: 0%;
     bottom: 20%;
@@ -276,7 +351,7 @@ span{
     justify-content: center;
   }
   .learn-more-btn {
-    background-color: #0096FF;	
+    background-color: #0F52BA;	
     border: none;
     color: white;
     padding: 20px 40px;
@@ -293,4 +368,285 @@ span{
     margin-top: 20px;
     }
 
+}
+
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 35px;
+    padding: 20px;
+}
+
+.card {
+    background-color:#ADD8E6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container h1 {
+    font-size: 60px;
+}
+
+.card h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.card h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.card p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Raleway", "sans-serif";
+    font-style: bold;
+    color: #191970;	
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    height: 0;
+    overflow: hidden;
+}
+
+.card:hover p {
+    opacity: 1;
+    height: auto; /* Update height as needed, or use another animation method */
+    margin-top: 10px;
+}
+
+.card img{
+    width: 100%;
+    opacity: 80%;
+    padding: 10px;
+    border-radius: 75px;
+}
+
+.message {
+    background-color: #87CEEB;
+    margin-top: 20px;
+    padding: 25px;
+    position: relative;
+}
+
+.message h2 {
+    font-size: 35px;
+    opacity: 0; /* Initially hide the text */
+    animation: appear 5s forwards;
+}
+
+.message h3 {
+    font-size: 25px;
+    opacity: 0; /* Initially hide the text */
+    animation: appear 5s forwards;
+}
+
+.message p {
+    font-size: 20px;
+    font-family: "Raleway", "sans-serif";
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0; /* Initially hide the text */
+    animation: appear 5s forwards; /* Use the 'appear' animation for 5 seconds */
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+      opacity: 1; /* Gradually increase opacity to 1 */
+    }
+  }
+
+ /* .message-img {
+    position: relative;
+    top: 0;
+    right: 0; /* Align image to the right of the message */
+     /* margin-top: 25px;
+    width: 100%;
+    opacity: 0; /* Initially hide the text */
+     /* animation: appear 5s forwards; /* Use the 'appear' animation for 5 seconds */
+      /*border-radius: 90px;
+  } */
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    font-size: 25px;
+    color: #191970;	
+    transition: .5s ease;
+    text-decoration: underline;
+}
+
+/* #destination-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 60%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  opacity: 80%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+  padding: 10px;
+  color: white;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#destination-container h1{
+    font-size: 60px;
+    text-align: center;
+    margin: 25px;
+}
+
+#Hungary h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+#Hungary {
+    background-color: #4682B4;	
+}
+
+
+#Italy h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+#Italy {
+    background-color: #4682B4;	
+}
+
+#Greece h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+#Greece {
+    background-color: #4682B4;	
+}
+
+#destination-header h2{
+    font-size: 40px;
+    text-align: center;
+    margin: 25px;
 }
