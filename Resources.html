@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,56 @@
             <a href="Destinations.html" >Destinations</a>
             <a href="Resources.html" class="active">Resources</a>
         </nav>
-    </header>
-    </div>
+        </header>
+        <main id="main">
+        <div class="resources-header">
+            <h1>RESOURCES</h1>
+            <h2>Check out these resources that I find helpful when I travel!</h2>
+        </div>
+        <div class="container">
+            <div class="panel">
+                <div class="panel-content">
+                    <a href="https://www.tripadvisor.com/" class="panel-link" alt="Tripadvisor">Tripadvisor</a>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-content">
+                    <a href="https://www.hostelworld.com/?source=affiliate-PHG-1101lIEA&affiliate=PHG&ref_id=1100lyqIJiH6&utm_medium=AFFILIATE&utm_source=bordersofadventure&uniqueclickID=1100lyqIJiH6&utm_content=" class="panel-link" alt="HostelWorld">HostelWorld</a>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-content">
+                  <a href="https://www.booking.com/"class="panel-link"alt="Booking.com">Booking.com</a>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-content">
+                  <a href="https://www.airbnb.com/" class="panel-link" alt="AirBnB">AirBnB</a>
+                </div>
+              </div>
+        </div>
+        <section class="resource-info" id="resource-info">
+            <div id="resource-info-text">
+                <h1>Start here to plan your trip with this To-Do List!</h1>
+                <h2>When I plan my trips, to-do lists are always the most important part of my organization. Try a to-do list out here! </h2>
+            </div>
+            <div id="todo-app">
+                <h1>Your Travel To-Do List</h1>
+                <form id="todo-form">
+                    <label for="todo-input">Enter your travel plans:</label>
 
+                    <input type="text" id="todo-input" placeholder="Start planning your trip here...">
+                    <button type="submit">Add Task</button>
+                </form>
+                <ul id="todo-list">
+                    <!-- Tasks will be added here -->
+                </ul>
+              </div>
+        </section>
+        </main>
+    <script src="js/main.js"></script>
+    <footer>
+        <p>Anna Klucens &copy; 2024</p>
+    </footer>
 </body>
+</html>

@@ -18,11 +18,16 @@ h3 {
     padding: 5px;
     border: 1px solid #000;
     z-index: 1000;
+    font-family: "Bebas Neue", sans-serif;
   }
   
   .skip-link:focus {
     top: 0;
   }
+
+footer {
+    font-size: 15px;
+}
 
 * {
     margin: 0;
@@ -35,6 +40,7 @@ h3 {
     font-family: "Bebas Neue", sans-serif;
 }
 
+
 :root {
     --bg-color: #F0FFFF;
     --snd-bg-color: #ADD8E6;
@@ -42,20 +48,46 @@ h3 {
     --main-color: #1434A4;
 }
 
-html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-}
 
 body {
-    background: var(--bg-color);
     color: var(--text-color);
 }
 
 section {
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 5rem 9% 2rem;
 
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.home-content h1{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: 70;
+    line-height: 1.3;
+    padding: 20px;
+} 
+
+.home-content {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+  
+.home-content h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    opacity: 0; /* Initially hide the text */
+    animation: appear 8s forwards;
+}
+
+h2 {
+    font-family: "Bebas Neue", sans-serif;
 }
 
 header {
@@ -69,6 +101,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 .navbar a {
@@ -79,8 +112,16 @@ header {
     font-weight: 700;
     padding: 10px;
     border-radius: 5px;
-
+    font-family: "Bebas Neue", sans-serif;
 }
+
+
+.home {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
 
 .navbar a:hover,
 .navbar a.active {
@@ -92,9 +133,20 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
+.home-content h1{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    font-weight: 70;
+    line-height: 1.3;
+    padding: 20px;
+} 
 
 .home-content h3:nth-of-type(2) {
     margin-bottom: 2rem;
@@ -104,17 +156,18 @@ span{
     color: var(--main-color);
 }
 
+
 .home-content h2 {
+    display: flex;
     font-size: 30px;
     margin-top: 20px;
     color: var(--main-color);
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    justify-content: center;
+
 }
 
-.home-content h1 {
-    font-size: 5.6rem;
-    font-weight: 700;
-    line-height: 1.3;
-}
 
 .home-img img {
     width: 25vw;
@@ -123,45 +176,52 @@ span{
 }
 
 .home-content p {
-    font-size: 2.1rem;
+    font-size: 22px;
     font-family: "Raleway", sans-serif;
-    margin-right: 10px;
 }
-}
-.home {
-        flex-direction: row; /* Stack children vertically */
-    }
     
+}
     .home-img img {
         width: 25vw;
         border: 5px solid #ADD8E6;
         border-radius: 75px;
         margin-top: 20px;
     }
-    
-    .home-content h1 {
-        font-size: 4.0rem; /* Smaller font size for the h1 on mobile */
-    }
 
     .home-content h2 {
-        font-size: 30px; /* Smaller font size for the h3 on mobile */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px; 
         font-weight: 700;
         color: #0096FF;
     }
 
     .home-content h3 {
-        font-size: 30px; /* Smaller font size for the h3 on mobile */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
         font-weight: 700;
         color: #0096FF;
+        padding-bottom: 30px;
     }
 
     .home-content p {
-        font-size: 1.8rem;
+        font-size: 16px;
+        text-align: center;
+        padding-bottom: 10px;
     }
     .home-content h1 {
-        font-size: 5.6rem;
-        font-weight: 700;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 80px;
+        font-weight: 70;
         line-height: 1.3;
+        padding: 20px;
+
     }
     
     .home-img img {
@@ -175,6 +235,11 @@ span{
         font-size: 2.1rem;
         font-family: "Raleway", sans-serif;
         margin-right: 10px;
+    }
+
+    h3 {
+        font-family: "Bebas Neue", sans-serif;
+
     }
 
     span{
@@ -206,60 +271,30 @@ span{
 
 }
 
-/* .about-content h3 {
-    font-size: 2.6rem;
-}
-
-.about-content p{
-    font-size: 1.6rem;
-    font-family: "Raleway", sans-serif;
-    margin: 2rem 0 3rem;
-}
-
-.gallery-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 10px 10px 10px 10px;
-    width: 100%;
-}
-
-.gallery-container img{
-    width: 100%;
-    padding: 10px;
-    transition: 1s;
-    filter: grayscale(100%)
-}
-.gallery-container img:hover{
-    filter: grayscale(0);
-    transform: scale(1.1);
-}
-*/
-
 .about-img-container {
     position: relative;
-    width: 100%; /* or specific width */
-    margin: 0 auto; /* optional, to center the container */
+    width: 100%; 
+    margin: 0 auto; 
   }
 
   .about-img-container img {
     height: 100%;
     width: 100%;
-    display: block; /* remove extra space below the image */
+    display: block; 
     opacity: 70%;
     top: 30%;
-    filter: blur(1.5px);
-    -webkit-filter: blur(1.5px);
     position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 40px;
   }
   .about-content-overlay {
     position: absolute;
-    top: 155%;
-    left: 50%; /* position as needed */
-    width: 50%; /* adjust width as needed */
+    top: 160%;
+    left: 50%;
+    width: 75%;
     padding: 20px;
-    background: rgb(255, 255, 255); /* semi-transparent white background */
+    background: rgb(255, 255, 255);
     border: 3px solid #f1f1f1;
     opacity: 90%;
     z-index: 2;
@@ -269,7 +304,7 @@ span{
 
   }
   .about-content-overlay h1{
-    font-size: 60px;
+    font-size: 50px;
     font-style: bold;
     }
 
@@ -277,6 +312,7 @@ span{
     font-size: 30px;
     font-style: bold;
     }
+
   .about-content-overlay p{
   font-size: 15px;
   font-style: bold;
@@ -285,7 +321,7 @@ span{
 
 }
 
-  .learn-more-btn {
+.learn-more-btn {
     background-color: #0F52BA;	
     border: none;
     color: white;
@@ -296,6 +332,8 @@ span{
     font-size: 16px;
     margin: 15px;
     cursor: pointer;
+    font-family: "Raleway", sans-serif;
+    border-radius: 90px;
   }
 
 @media only screen and (min-width: 768px) {
@@ -307,71 +345,84 @@ span{
     padding: 20px;
     margin-top: 10px;
 }
-
-
-@media only screen and (min-width: 600px) {
-/* mobile */
+.panel {
+    width: 500px;
+    height: 500px;
 }
+
 @media only screen and (min-width: 992px) {
 /* desktop */
 .about-img-container {
     position: relative;
-    width: 100%; /* or specific width */
-    margin: 0 auto; /* optional, to center the container */
+    width: 80%;
+    margin: 0 auto;
   }
   
   .about-img-container img {
     height: 100%;
     width: 100%;
-    display: block; /* remove extra space below the image */
-    opacity: 0.7; /* Use a value between 0 and 1 for opacity */
-    /* There is a mistake here, 'position: center' is not a valid CSS, it will be either static (default), relative, absolute, fixed or sticky */
-    position: relative; /* changed to position the image within the container */
+    display: block;
+    opacity: 0.7;
+    position: relative; 
     background-repeat: no-repeat;
     background-size: cover;
   }
   
   .about-content-overlay {
     position: absolute;
-    top: 180%;
-    left: 70%; /* aligned to the left edge */
+    top: 145%;
+    left: 70%;
     right: 0%;
     bottom: 20%;
-    width: 50%; /* adjust width as needed */
-    /* height changed to 100% to cover the full height of the container */
-    height: 80%;
+    width: 45%;
+    height: 65%;
     padding: 20px;
-    background: rgb(255, 255, 255); /* semi-transparent white background */
+    background: rgb(255, 255, 255);
     border: 3px solid #f1f1f1;
-    opacity: 0.9; /* Use a value between 0 and 1 for opacity */
+    opacity: 0.9;
     z-index: 2;
     line-height: 2.0;
     text-align: center;
-    /* Removed transform, it's no longer necessary since we're not centering the overlay */
     justify-content: center;
   }
   .learn-more-btn {
     background-color: #0F52BA;	
     border: none;
     color: white;
-    padding: 20px 40px;
+    padding: 15px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
+    font-size: 16px;
     margin: 30px;
     cursor: pointer;
   }
   .about-content-overlay h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
     font-size: 60px;
     font-style: bold;
-    margin-top: 20px;
-    }
+    margin: 0;
 
+    }
+    .about-content-overlay p{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-style: bold;
+        }
+
+        .panel {
+            width: 600px;
+            height: 600px;
+        }    
 }
 
 
-#main {
+#container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
@@ -385,16 +436,11 @@ span{
     border-radius: 10px;
 }
 
-#container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#container h1 {
+#main h1 {
     font-size: 60px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .card h2 {
@@ -462,65 +508,41 @@ span{
     line-height: 1.6;
     margin-top: 10px;
     margin-bottom: 20px;
-    opacity: 0; /* Initially hide the text */
-    animation: appear 5s forwards; /* Use the 'appear' animation for 5 seconds */
+    opacity: 0; 
+    animation: appear 5s forwards;
   }
   
   @keyframes appear {
     from {
-      opacity: 0; /* Start with opacity 0 */
+      opacity: 0;
     }
     to {
-      opacity: 1; /* Gradually increase opacity to 1 */
+      opacity: 1; 
     }
   }
-
- /* .message-img {
-    position: relative;
-    top: 0;
-    right: 0; /* Align image to the right of the message */
-     /* margin-top: 25px;
-    width: 100%;
-    opacity: 0; /* Initially hide the text */
-     /* animation: appear 5s forwards; /* Use the 'appear' animation for 5 seconds */
-      /*border-radius: 90px;
-  } */
 
 .social-media a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
     margin-top:10px;
-    font-size: 25px;
+    font-size: 18px;
     color: #191970;	
     transition: .5s ease;
     text-decoration: underline;
+    font-family: 'Raleway', 'sans-serif';
 }
 
-/* #destination-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
 .slideshow-container {
-  width: 60%;
+  width: 80%;
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -534,23 +556,22 @@ span{
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  background-color: black;
+  opacity: 80%;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: black;
 }
 
-/* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 40px;
+  font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -558,19 +579,64 @@ span{
   text-align: center;
   background-color: #000;
   opacity: 80%;
+  font-family: 'Raleway', sans-serif;
 }
 
-/* Number text (1/3 etc) */
+@media only screen and (min-width: 768px) {
+    .text {
+        color: #f2f2f2;
+        font-size: 16px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+        background-color: #000;
+        opacity: 80%;
+        font-family: 'Raleway', sans-serif;
+      }
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 20px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        background-color: black;
+        opacity: 80%;
+      }
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color: black;
+        opacity: 80%;
+      }
+      .slideshow-container {
+        width: 50%;
+        position: relative;
+        margin: auto;
+      }
+    }
+
 .numbertext {
   color: #f2f2f2;
-  font-size: 20px;
+  font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
   background-color: black;
+  opacity: 80%;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -578,7 +644,7 @@ span{
   margin: 5px;
   padding: 10px;
   color: white;
-  background-color: #bbb;
+  background-color: white;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -588,7 +654,6 @@ span{
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -650,3 +715,256 @@ span{
     text-align: center;
     margin: 25px;
 }
+
+#France h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+#France {
+    background-color: #4682B4;	
+}
+
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    height: 100%;
+  }
+  
+  .panel {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 98px;
+    overflow: hidden;
+    position: relative;
+    background-color: #6082B6;
+    transition: background-color 0.3s ease;
+  }
+  
+  .panel-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .panel-link {
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    transition: opacity 0.3s ease;
+    font-family: "Bebas Neue", sans-serif;
+
+  }
+  
+.panel:hover .panel-link {
+    opacity: 1;
+}
+
+  .panel-content img {
+    opacity: 90%;
+    width: 100%;
+    height: 100%;
+  }  
+  
+
+  .panel:hover {
+    background-color: black;
+    opacity: 80%;
+  }
+  
+  .panel:hover .caption {
+    color: white;
+  }
+  
+
+.resources-header h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.resources-header h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+    color: var(--main-color);
+}
+
+.resource-info {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 490px;
+    background-color: #ADD8E6;
+    color: black;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  #resource-info-text h1 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 0px;
+    margin: 0;
+    top: 10px;
+  }
+
+  #resource-info-text h2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 30px;
+  }
+
+  #todo-app {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #todo-form input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  #todo-form button {
+    padding: 10px 20px;
+    background-color: #1434A4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #todo-form button:hover {
+    background-color: #4682B4;
+  }
+  
+  #todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #todo-list li {
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #todo-app h1 {
+    font-size: 30px;
+    text-align: left;
+    padding: 0;
+
+  }
+
+  @media only screen and (min-width: 768px) {
+
+    #todo-app {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      #todo-app h1 {
+        font-size: 45px;
+        text-align: left;
+        padding: 0;
+
+      }
+      
+      #todo-form input[type="text"] {
+        width: 70%;
+        padding: 10px;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        margin-right: 10px;
+      }
+      
+      #todo-form button {
+        padding: 10px 20px;
+        background-color: #1434A4;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      #todo-form button:hover {
+        background-color: #4682B4;
+      }
+      
+      #todo-list {
+        list-style: none;
+        padding: 0;
+      }
+      
+      #todo-list li {
+        background-color: #f9f9f9;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #resource-info-text h1 {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 45px;
+        font-family: 'Bebas Neue', sans-serif;
+        padding: 30px;
+        top: 20px;
+      }
+    
+      #resource-info-text h2 {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-size: 25px;
+        font-family: 'Raleway', sans-serif;
+        padding-bottom: 30px;
+      }
+  }
